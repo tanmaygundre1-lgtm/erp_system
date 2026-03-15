@@ -1,0 +1,365 @@
+SCHOOL ERP - COMPLETE FOLDER STRUCTURE
+=====================================
+
+school_erp/
+│
+├── frontend/                                    # React Application
+│   ├── public/
+│   │   └── index.html
+│   │
+│   ├── src/
+│   │   ├── features/
+│   │   │   ├── auth/
+│   │   │   │   ├── components/
+│   │   │   │   │   ├── LoginForm.tsx
+│   │   │   │   │   ├── RegisterForm.tsx
+│   │   │   │   │   ├── ProtectedRoute.tsx
+│   │   │   │   │   └── index.ts
+│   │   │   │   ├── pages/
+│   │   │   │   │   ├── LoginPage.tsx
+│   │   │   │   │   ├── RegisterPage.tsx
+│   │   │   │   │   └── index.ts
+│   │   │   │   ├── services/
+│   │   │   │   │   ├── authService.ts
+│   │   │   │   │   └── index.ts
+│   │   │   │   ├── hooks/
+│   │   │   │   │   ├── useAuth.ts
+│   │   │   │   │   ├── useLogin.ts
+│   │   │   │   │   └── index.ts
+│   │   │   │   ├── context/
+│   │   │   │   │   ├── AuthContext.tsx
+│   │   │   │   │   └── index.ts
+│   │   │   │   ├── styles/
+│   │   │   │   │   ├── auth.module.css
+│   │   │   │   │   └── auth.scss
+│   │   │   │   ├── types/
+│   │   │   │   │   ├── auth.types.ts
+│   │   │   │   │   └── index.ts
+│   │   │   │   └── index.tsx
+│   │   │   │
+│   │   │   ├── users/
+│   │   │   │   ├── components/
+│   │   │   │   │   ├── UserCard.tsx
+│   │   │   │   │   ├── UserForm.tsx
+│   │   │   │   │   ├── UserList.tsx
+│   │   │   │   │   └── index.ts
+│   │   │   │   ├── pages/
+│   │   │   │   │   ├── UsersPage.tsx
+│   │   │   │   │   ├── UserDetailPage.tsx
+│   │   │   │   │   └── index.ts
+│   │   │   │   ├── services/
+│   │   │   │   │   ├── userService.ts
+│   │   │   │   │   └── index.ts
+│   │   │   │   ├── hooks/
+│   │   │   │   │   ├── useUsers.ts
+│   │   │   │   │   ├── useUser.ts
+│   │   │   │   │   └── index.ts
+│   │   │   │   ├── context/
+│   │   │   │   │   ├── UserContext.tsx
+│   │   │   │   │   └── index.ts
+│   │   │   │   ├── styles/
+│   │   │   │   │   └── users.module.css
+│   │   │   │   ├── types/
+│   │   │   │   │   ├── user.types.ts
+│   │   │   │   │   └── index.ts
+│   │   │   │   └── index.tsx
+│   │   │   │
+│   │   │   ├── products/                       # Template for additional features
+│   │   │   │   ├── components/
+│   │   │   │   ├── pages/
+│   │   │   │   ├── services/
+│   │   │   │   ├── hooks/
+│   │   │   │   ├── context/
+│   │   │   │   ├── styles/
+│   │   │   │   ├── types/
+│   │   │   │   └── index.tsx
+│   │   │   │
+│   │   │   └── orders/                        # Template for additional features
+│   │   │       ├── components/
+│   │   │       ├── pages/
+│   │   │       ├── services/
+│   │   │       ├── hooks/
+│   │   │       ├── context/
+│   │   │       ├── styles/
+│   │   │       ├── types/
+│   │   │       └── index.tsx
+│   │   │
+│   │   ├── shared/
+│   │   │   ├── components/
+│   │   │   │   ├── Button/
+│   │   │   │   │   ├── Button.tsx
+│   │   │   │   │   ├── Button.module.css
+│   │   │   │   │   └── index.ts
+│   │   │   │   ├── Modal/
+│   │   │   │   │   ├── Modal.tsx
+│   │   │   │   │   ├── Modal.module.css
+│   │   │   │   │   └── index.ts
+│   │   │   │   ├── Input/
+│   │   │   │   │   ├── Input.tsx
+│   │   │   │   │   ├── Input.module.css
+│   │   │   │   │   └── index.ts
+│   │   │   │   ├── Card/
+│   │   │   │   │   ├── Card.tsx
+│   │   │   │   │   ├── Card.module.css
+│   │   │   │   │   └── index.ts
+│   │   │   │   ├── Header/
+│   │   │   │   │   ├── Header.tsx
+│   │   │   │   │   ├── Header.module.css
+│   │   │   │   │   └── index.ts
+│   │   │   │   ├── Sidebar/
+│   │   │   │   │   ├── Sidebar.tsx
+│   │   │   │   │   ├── Sidebar.module.css
+│   │   │   │   │   └── index.ts
+│   │   │   │   ├── Footer/
+│   │   │   │   │   ├── Footer.tsx
+│   │   │   │   │   ├── Footer.module.css
+│   │   │   │   │   └── index.ts
+│   │   │   │   ├── Loader/
+│   │   │   │   │   ├── Loader.tsx
+│   │   │   │   │   ├── Loader.module.css
+│   │   │   │   │   └── index.ts
+│   │   │   │   └── index.ts
+│   │   │   │
+│   │   │   ├── hooks/
+│   │   │   │   ├── useLocalStorage.ts
+│   │   │   │   ├── useDebounce.ts
+│   │   │   │   ├── useFetch.ts
+│   │   │   │   ├── usePagination.ts
+│   │   │   │   ├── useForm.ts
+│   │   │   │   └── index.ts
+│   │   │   │
+│   │   │   ├── contexts/
+│   │   │   │   ├── ThemeContext.tsx
+│   │   │   │   ├── LanguageContext.tsx
+│   │   │   │   ├── NotificationContext.tsx
+│   │   │   │   └── index.ts
+│   │   │   │
+│   │   │   ├── styles/
+│   │   │   │   ├── globals.css
+│   │   │   │   ├── variables.css
+│   │   │   │   ├── reset.css
+│   │   │   │   ├── typography.css
+│   │   │   │   ├── animations.css
+│   │   │   │   └── themes/
+│   │   │   │       ├── light.css
+│   │   │   │       └── dark.css
+│   │   │   │
+│   │   │   ├── utils/
+│   │   │   │   ├── api.ts                     # HTTP interceptors, base configuration
+│   │   │   │   ├── validators.ts             # Validation functions
+│   │   │   │   ├── formatters.ts             # Formatting utilities
+│   │   │   │   ├── localStorage.ts           # Local storage helpers
+│   │   │   │   ├── constants.ts              # App constants
+│   │   │   │   ├── errorHandler.ts           # Error handling utilities
+│   │   │   │   └── index.ts
+│   │   │   │
+│   │   │   └── types/
+│   │   │       ├── common.types.ts
+│   │   │       ├── api.types.ts
+│   │   │       └── index.ts
+│   │   │
+│   │   ├── config/
+│   │   │   ├── api.config.ts
+│   │   │   ├── env.ts
+│   │   │   └── constants.ts
+│   │   │
+│   │   ├── App.tsx
+│   │   ├── App.css
+│   │   ├── main.tsx (or index.tsx)
+│   │   └── vite-env.d.ts
+│   │
+│   ├── .gitignore
+│   ├── .env.example
+│   ├── .prettierrc
+│   ├── .eslintrc.json
+│   ├── package.json
+│   ├── tsconfig.json
+│   ├── vite.config.ts                        # or webpack.config.js
+│   └── README.md
+│
+├── backend/                                    # Node.js + Express Application
+│   ├── src/
+│   │   ├── features/
+│   │   │   ├── auth/
+│   │   │   │   ├── controller/
+│   │   │   │   │   ├── authController.ts
+│   │   │   │   │   └── index.ts
+│   │   │   │   ├── service/
+│   │   │   │   │   ├── authService.ts
+│   │   │   │   │   └── index.ts
+│   │   │   │   ├── routes/
+│   │   │   │   │   ├── authRoutes.ts
+│   │   │   │   │   └── index.ts
+│   │   │   │   ├── model/
+│   │   │   │   │   ├── User.ts
+│   │   │   │   │   └── index.ts
+│   │   │   │   ├── validation/
+│   │   │   │   │   ├── authValidation.ts
+│   │   │   │   │   └── index.ts
+│   │   │   │   └── tests/
+│   │   │   │       ├── auth.test.ts
+│   │   │   │       └── auth.integration.test.ts
+│   │   │   │
+│   │   │   ├── users/
+│   │   │   │   ├── controller/
+│   │   │   │   │   ├── userController.ts
+│   │   │   │   │   └── index.ts
+│   │   │   │   ├── service/
+│   │   │   │   │   ├── userService.ts
+│   │   │   │   │   └── index.ts
+│   │   │   │   ├── routes/
+│   │   │   │   │   ├── userRoutes.ts
+│   │   │   │   │   └── index.ts
+│   │   │   │   ├── model/
+│   │   │   │   │   ├── User.ts
+│   │   │   │   │   └── index.ts
+│   │   │   │   ├── validation/
+│   │   │   │   │   ├── userValidation.ts
+│   │   │   │   │   └── index.ts
+│   │   │   │   └── tests/
+│   │   │   │       ├── user.test.ts
+│   │   │   │       └── user.integration.test.ts
+│   │   │   │
+│   │   │   ├── products/                     # Template for additional features
+│   │   │   │   ├── controller/
+│   │   │   │   │   └── productController.ts
+│   │   │   │   ├── service/
+│   │   │   │   │   └── productService.ts
+│   │   │   │   ├── routes/
+│   │   │   │   │   └── productRoutes.ts
+│   │   │   │   ├── model/
+│   │   │   │   │   └── Product.ts
+│   │   │   │   ├── validation/
+│   │   │   │   │   └── productValidation.ts
+│   │   │   │   └── tests/
+│   │   │   │       └── product.test.ts
+│   │   │   │
+│   │   │   └── orders/                       # Template for additional features
+│   │   │       ├── controller/
+│   │   │       │   └── orderController.ts
+│   │   │       ├── service/
+│   │   │       │   └── orderService.ts
+│   │   │       ├── routes/
+│   │   │       │   └── orderRoutes.ts
+│   │   │       ├── model/
+│   │   │       │   └── Order.ts
+│   │   │       ├── validation/
+│   │   │       │   └── orderValidation.ts
+│   │   │       └── tests/
+│   │   │           └── order.test.ts
+│   │   │
+│   │   ├── config/
+│   │   │   ├── database.ts
+│   │   │   ├── env.ts
+│   │   │   └── constants.ts
+│   │   │
+│   │   ├── middleware/
+│   │   │   ├── authMiddleware.ts
+│   │   │   ├── errorHandler.ts
+│   │   │   ├── requestValidator.ts
+│   │   │   ├── corsMiddleware.ts
+│   │   │   ├── loggingMiddleware.ts
+│   │   │   ├── rateLimiter.ts
+│   │   │   └── index.ts
+│   │   │
+│   │   ├── utils/
+│   │   │   ├── helpers/
+│   │   │   │   ├── hashPassword.ts
+│   │   │   │   ├── generateToken.ts
+│   │   │   │   ├── logger.ts
+│   │   │   │   └── index.ts
+│   │   │   ├── validators/
+│   │   │   │   ├── emailValidator.ts
+│   │   │   │   ├── phoneValidator.ts
+│   │   │   │   └── index.ts
+│   │   │   ├── formatters/
+│   │   │   │   ├── dateFormatter.ts
+│   │   │   │   ├── currencyFormatter.ts
+│   │   │   │   └── index.ts
+│   │   │   └── index.ts
+│   │   │
+│   │   ├── database/
+│   │   │   ├── connection.ts
+│   │   │   ├── migrations/
+│   │   │   │   ├── 001_create_users_table.sql
+│   │   │   │   ├── 002_create_products_table.sql
+│   │   │   │   ├── 003_create_orders_table.sql
+│   │   │   │   ├── 004_create_relationships.sql
+│   │   │   │   └── migrations.json
+│   │   │   ├── seeds/
+│   │   │   │   ├── seedUsers.ts
+│   │   │   │   ├── seedProducts.ts
+│   │   │   │   ├── seedOrders.ts
+│   │   │   │   └── index.ts
+│   │   │   └── index.ts
+│   │   │
+│   │   ├── types/
+│   │   │   ├── index.ts
+│   │   │   ├── common.types.ts
+│   │   │   ├── express.d.ts
+│   │   │   └── database.types.ts
+│   │   │
+│   │   ├── app.ts                            # Express app initialization
+│   │   └── constants.ts
+│   │
+│   ├── server.ts                             # Server entry point
+│   ├── tests/
+│   │   ├── integration/
+│   │   │   └── integration.test.ts
+│   │   ├── setup.ts
+│   │   └── teardown.ts
+│   ├── logs/                                 # Generated logs
+│   │   └── .gitkeep
+│   ├── .gitignore
+│   ├── .env.example
+│   ├── .prettierrc
+│   ├── .eslintrc.json
+│   ├── package.json
+│   ├── tsconfig.json
+│   ├── jest.config.js
+│   ├── nodemon.json
+│   └── README.md
+│
+├── .gitignore                                 # Root .gitignore
+├── PROJECT_STRUCTURE.md                       # This documentation
+├── FOLDER_STRUCTURE.txt                       # Detailed folder tree
+├── CONTRIBUTING.md                            # Contribution guidelines
+├── README.md                                  # Main project README
+└── docker-compose.yml                         # Optional: Docker setup
+
+
+
+═══════════════════════════════════════════════════════════════════════════════
+
+KEY PATTERNS AND CONVENTIONS:
+
+1. FEATURE MODULES ARE SELF-CONTAINED
+   Each feature (auth, users, products, orders) is a vertical slice containing
+   all layers needed for that domain.
+
+2. INDEX FILES FOR CLEAN IMPORTS
+   Each folder contains index.ts/index.tsx for barrel exports:
+   ✅ import { useAuth } from './hooks'
+   ❌ import { useAuth } from './hooks/useAuth'
+
+3. NAMING CONVENTIONS
+   - Files: camelCase.ts (authService.ts, userController.ts)
+   - Components: PascalCase.tsx (UserCard.tsx, LoginForm.tsx)
+   - Folders: lowercase (components/, services/, hooks/)
+   - Types: PascalCase.ts (User.ts, Product.ts)
+
+4. STRICT LAYER SEPARATION
+   ✅ Components → Services → Hooks (circular)
+   ✅ Services → Models → Database
+   ❌ Components directly calling database
+   ❌ Models having business logic
+
+5. SHARED VS FEATURE-SPECIFIC
+   - Shared: Reusable across multiple features (Button, Modal, useLocalStorage)
+   - Feature-specific: Only used within one feature (LoginForm, useAuth)
+
+6. API CALLS
+   Frontend: service/ → HTTP calls → Backend: controller/ → service/
+   Backend: controller/ → service/ → model/ → database/
+
+═══════════════════════════════════════════════════════════════════════════════
